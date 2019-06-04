@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: debian:stretch-slim
+
+%labels
+Author "Randall Cab White - rcwhite@stanford.edu"
+
+
+#########
+#%setup
+#########
+
+#Downlaod packages
+%post
+  apt-get -ym update
+  apt-get -ym install chromium-shell chromium-l10n chromium-driver chromium
+
+%environment
+  export IMAGE_NAME="chromium"
+%runscript
+	chromium

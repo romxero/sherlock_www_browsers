@@ -1,0 +1,19 @@
+Bootstrap: docker
+From: debian:stretch-slim
+
+%labels
+Author "Randall Cab White - rcwhite@stanford.edu"
+
+
+#########
+#%setup
+#########
+
+#Downlaod packages
+%post
+  apt-get -ym update
+  apt-get -ym install midori gnome-icon-theme
+%environment
+  export IMAGE_NAME="midori"
+%runscript
+	midori
