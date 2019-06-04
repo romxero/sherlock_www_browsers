@@ -1,4 +1,8 @@
 # sherlock_www_browsers
+
+
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/3100)
+
 Web browsers for Sherlock use
 
 These are web browser wrapped in singularity containers for use on Sherlock. 
